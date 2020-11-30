@@ -24,6 +24,11 @@ public class IndexController {
 
     @GetMapping("/cadastro")
     public String singUp(){
+        return "signUpUser";
+    }
+
+    @GetMapping("/cadastro/inst")
+    public String singUpInst(){
         return "signUpInst";
     }
 }

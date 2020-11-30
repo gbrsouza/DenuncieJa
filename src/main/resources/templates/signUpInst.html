@@ -82,78 +82,148 @@
 </div>
 
         <!-- Section -->
-        <section class="min-vh-100 d-flex align-items-center bg-soft">
+        <section class="min-vh-200 d-flex align-items-center bg-soft">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 d-flex align-items-center justify-content-center">
                         <div class="signin-inner mt-3 mt-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                             <div class="text-center text-md-center mb-4 mt-md-0">
-                                <h1 class="mb-0 h3">Create an account</h1>
+                                <h1 class="mb-0 h3">Cadastro de Usuário</h1>
                             </div>
                             <form action="#">
-                                <!-- Form -->
-                                <div class="form-group">
-                                    <label for="exampleInputIcon4">Nome</label>
-                                    <div class="input-group mb-4">
+                                <div class="form-row">
+                                    <label for="name">Nome</label>
+                                    <div class="form-group col-md-12">
                                         <input class="form-control" id="name" placeholder="Seu nome" type="text" aria-label="text" required>
                                     </div>
-                                    <label for="exampleInputIcon4">Your email</label>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><span class="fas fa-envelope"></span></span>
+
+                                    <div class="form-group col-md-8">
+                                        <label for="exampleInputDate1">Nascimento</label>
+                                        <div class="input-group mb-1">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><span class="far fa-calendar-alt"></span></span>
+                                            </div>
+                                            <input class="form-control datepicker" id="exampleInputDate1" placeholder="Nascimento" type="text" aria-label="Date with icon left">
                                         </div>
-                                        <input class="form-control" id="exampleInputIcon4" placeholder="example@company.com" type="text" aria-label="email adress" required>
                                     </div>
-                                </div>
-                                <!-- End of Form -->
-                                <div class="form-group">
-                                    <!-- Form -->
-                                    <div class="form-group">
-                                        <div class="input-group mb-4">
+
+                                    <div class="form-group col-md-4">
+                                        <label for="disabledSelect">Sexo</label>
+                                        <select id="disabledSelect" class="form-control">
+                                            <option>Masculino</option>
+                                            <option>Feminino</option>
+                                            <option>Outro</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="disabledTextInput">Telefone</label>
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="(xx) xxxx-xxxx">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="disabledTextInput">Celular</label>
+                                        <input type="text" id="Celular" class="form-control" placeholder="(xx) xxxxx-xxxx">
+                                    </div>
+
+                                    <div class="form-group col-md-12">
+                                        <label for="exampleInputIcon4">Seu email</label>
+                                        <div class="input-group mb-1">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><span class="fas fa-envelope"></span></span>
+                                            </div>
+                                            <input class="form-control" id="exampleInputIcon4" placeholder="example@company.com" type="text" aria-label="email adress" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-12">
+                                        <label for="exampleInputIcon1">Instituição</label>
+                                        <div class="input-group mb-1">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><span class="fas fa-search"></span></span>
+                                            </div>
+                                            <input class="form-control" id="exampleInputIcon1" placeholder="UFRN" type="text" aria-label="Input with icon left">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-12">
+                                        <!-- Radio -->
+                                        <fieldset>
+                                            <legend class="h6">Qual seu vínculo com esta instituição?</legend>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="op1" value="option1" checked>
+                                                <label class="form-check-label" for="op1">
+                                                    Aluno
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="op2" value="option2">
+                                                <label class="form-check-label" for="op2">
+                                                    Professor
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="op3" value="option2">
+                                                <label class="form-check-label" for="op3">
+                                                    Técno Administrativo
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="op4" value="option3" disabled>
+                                                <label class="form-check-label" for="op4">
+                                                    Terceirizado
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="op5" value="option3" disabled>
+                                                <label class="form-check-label" for="op5">
+                                                    Coordenação
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="op6" value="option3" disabled>
+                                                <label class="form-check-label" for="op6">
+                                                    Outro
+                                                </label>
+                                            </div>
+                                            <!-- End of Radio -->
+                                        </fieldset>
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <div class="input-group mb-1">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><span class="fas fa-unlock-alt"></span></span>
                                             </div>
-                                            <input class="form-control" id="password" placeholder="Password" type="password" aria-label="Password" required>
+                                            <input class="form-control" id="password" placeholder="Senha" type="password" aria-label="Password" required>
                                         </div>
                                     </div>
-                                    <!-- End of Form -->
-                                    <!-- Form -->
-                                    <div class="form-group">
-                                        <div class="input-group">
+
+                                    <div class="form-group col-md-6">
+                                        <div class="input-group mb-1">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><span class="fas fa-unlock-alt"></span></span>
                                             </div>
-                                            <input class="form-control" id="passwordConfirm" placeholder="Confirm password" type="password" aria-label="Password" required>
+                                            <input class="form-control" id="passwordConfirm" placeholder="Confirmar Senha" type="password" aria-label="Password" required>
                                         </div>
                                     </div>
-                                    <!-- End of Form -->
-                                    <div class="form-check mb-4">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-                                        <label class="form-check-label" for="defaultCheck6">
-                                            I agree to the <a href="#">terms and conditions</a>
-                                        </label>
+
+                                    <div class="form-group">
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                            <label class="form-check-label" for="defaultCheck6">
+                                                Eu aceito os <a href="#">termos e condições</a>
+                                            </label>
+                                        </div>
                                     </div>
+                                    <button type="submit" class="btn btn-block btn-primary">Cadastrar</button>
                                 </div>
-                                <button type="submit" class="btn btn-block btn-primary">Sign in</button>
                             </form>
-                            <div class="mt-3 mb-4 text-center">
-                                <span class="font-weight-normal">or</span>
-                            </div>
-                            <div class="btn-wrapper my-4 text-center">
-                                <button class="btn btn-icon-only btn-pill btn-outline-light text-facebook mr-2" type="button" aria-label="facebook button" title="facebook button">
-                                    <span aria-hidden="true" class="fab fa-facebook-f"></span>
-                                </button>
-                                <button class="btn btn-icon-only btn-pill btn-outline-light text-twitter mr-2" type="button" aria-label="twitter button" title="twitter button">
-                                    <span aria-hidden="true" class="fab fa-twitter"></span>
-                                </button>
-                                <button class="btn btn-icon-only btn-pill btn-outline-light text-facebook" type="button" aria-label="github button" title="github button">
-                                    <span aria-hidden="true" class="fab fa-github"></span>
-                                </button>
-                            </div>
+
                             <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
                                 <span class="font-weight-normal">
-                                    Already have an account?
-                                    <a href="./sign-in.html" class="font-weight-bold">Login here</a>
+                                    Já possui cadastro?
+                                    <a href="./sign-in.html" class="font-weight-bold">Login aqui</a>
                                 </span>
                             </div>
                         </div>

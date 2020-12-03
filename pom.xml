@@ -33,6 +33,13 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>9.1.0.jre11-preview</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>8.0.22</version>-->
+<!--        </dependency>-->
+
 
         <dependency>
             <groupId>org.thymeleaf</groupId>

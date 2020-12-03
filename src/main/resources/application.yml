@@ -10,8 +10,13 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        dialect: org.hibernate.dialect.MySQLDialect
 
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/DenuncieJa
+#    username: root
+#    password: 123456789
+#    driverClassName: com.mysql.jdbc.Driver
   datasource:
     url: jdbc:sqlserver://localhost:1433;databaseName=DenuncieJa
     username: sa

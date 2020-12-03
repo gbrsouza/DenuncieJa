@@ -44,19 +44,19 @@
     <meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/pixel-lite/pixel-lite-preview.jpg">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="apple-touch-icon" sizes="120x120" href="/pixel/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/pixel/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/pixel/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/pixel/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/pixel/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Fontawesome -->
-    <link type="text/css" href="/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link type="text/css" href="/pixel/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 
     <!-- Pixel CSS -->
-    <link type="text/css" href="/css/pixel.css" rel="stylesheet">
+    <link type="text/css" href="/pixel/css/pixel.css" rel="stylesheet">
 
 
 </head>
@@ -65,16 +65,17 @@
 <header class="header-global">
     <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark navbar-transparent">
         <div class="container position-relative">
-            <a class="navbar-brand mr-lg-5" href="/index.html">
-                <img class="navbar-brand-dark" src="/assets/img/brand/light.svg" alt="Logo Pixel Light">
-                <img class="navbar-brand-light" src="/assets/img/brand/dark.svg" alt="Logo Pixel Dark">
+            <a class="navbar-brand mr-lg-5" href="/">
+                <img class="navbar-brand-dark" src="/pixel/assets/img/brand/light.svg" alt="Logo Pixel Light">
+                <img class="navbar-brand-light" src="/pixel/assets/img/brand/dark.svg" alt="Logo Pixel Dark">
             </a>
+
             <div class="navbar-collapse collapse" id="navbar_global">
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="/index.html#features">
-                                <img src="/assets/img/brand/dark.svg" alt="Logo Pixel">
+                                <img src="/pixel/assets/img/brand/dark.svg" alt="Logo Pixel">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -82,10 +83,32 @@
                         </div>
                     </div>
                 </div>
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-inner-text">Sobre</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-inner-text">Suporte</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                            <span class="nav-link-inner-text">Cadastro</span>
+                            <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/cadastro">Usuário</a></li>
+                            <li><a class="dropdown-item" href="/cadastro/inst">Instituição</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="d-flex align-items-center">
-                <span class="d-none d-md-inline"> <a href="https://demo.themesberg.com/pixel-pro/" target="_blank" class="btn btn-tertiary animate-up-2">Cadastro</a></span>
-                <a href="https://themesberg.com/docs/pixel-bootstrap/getting-started/overview/" target="_blank" class="btn btn-outline-soft ml-md-3 animate-up-2"><span class="far fa-user mr-2"></span>Login</a>
+<!--                <span class="d-none d-md-inline"> <a href="https://demo.themesberg.com/pixel-pro/" target="_blank" class="btn btn-tertiary animate-up-2">Cadastro</a></span>-->
+                <a href="/login" target="_blank" class="btn btn-outline-soft ml-md-3 animate-up-2"><span class="far fa-user mr-2"></span>Login</a>
                 <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -95,22 +118,22 @@
 </header>
 <main>
 
-    <div class="preloader bg-dark flex-column justify-content-center align-items-center">
-        <svg id="loader-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 64 78.4">
-            <path fill="#fff" d="M10,0h1.2V11.2H0V10A10,10,0,0,1,10,0Z"/>
-            <rect fill="none" stroke="#fff" stroke-width="11.2" x="40" y="17.6" width="0" height="25.6"/>
-            <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="11.2" x="23" y="35.2" width="0" height="25.6"/>
-            <path fill="#fff" d="M52.8,35.2H64V53.8a7,7,0,0,1-7,7H52.8V35.2Z"/>
-            <rect fill="none" stroke="#fff" stroke-width="11.2" x="6" y="52.8" width="0" height="25.6"/>
-            <path fill="#fff" d="M52.8,0H57a7,7,0,0,1,7,7h0v4.2H52.8V0Z"/>
-            <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="11.2" x="57.8" y="17.6" width="0" height="11.2"/>
-            <rect fill="none" stroke="#fff" stroke-width="11.2" x="6" y="35.2" width="0" height="11.2"/>
-            <rect fill="none" stroke="#fff" stroke-width="11.2" x="40.2" y="49.6" width="0" height="11.2"/>
-            <path fill="#fff" d="M17.6,67.2H28.8v1.2a10,10,0,0,1-10,10H17.6V67.2Z"/>
-            <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="28.8" x="31.6" width="0" height="11.2"/>
-            <rect fill="none" stroke="#fff" x="14" stroke-width="28.8" y="17.6" width="0" height="11.2"/>
-        </svg>
-    </div>
+<!--    <div class="preloader bg-dark flex-column justify-content-center align-items-center">-->
+<!--        <svg id="loader-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 64 78.4">-->
+<!--            <path fill="#fff" d="M10,0h1.2V11.2H0V10A10,10,0,0,1,10,0Z"/>-->
+<!--            <rect fill="none" stroke="#fff" stroke-width="11.2" x="40" y="17.6" width="0" height="25.6"/>-->
+<!--            <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="11.2" x="23" y="35.2" width="0" height="25.6"/>-->
+<!--            <path fill="#fff" d="M52.8,35.2H64V53.8a7,7,0,0,1-7,7H52.8V35.2Z"/>-->
+<!--            <rect fill="none" stroke="#fff" stroke-width="11.2" x="6" y="52.8" width="0" height="25.6"/>-->
+<!--            <path fill="#fff" d="M52.8,0H57a7,7,0,0,1,7,7h0v4.2H52.8V0Z"/>-->
+<!--            <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="11.2" x="57.8" y="17.6" width="0" height="11.2"/>-->
+<!--            <rect fill="none" stroke="#fff" stroke-width="11.2" x="6" y="35.2" width="0" height="11.2"/>-->
+<!--            <rect fill="none" stroke="#fff" stroke-width="11.2" x="40.2" y="49.6" width="0" height="11.2"/>-->
+<!--            <path fill="#fff" d="M17.6,67.2H28.8v1.2a10,10,0,0,1-10,10H17.6V67.2Z"/>-->
+<!--            <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="28.8" x="31.6" width="0" height="11.2"/>-->
+<!--            <rect fill="none" stroke="#fff" x="14" stroke-width="28.8" y="17.6" width="0" height="11.2"/>-->
+<!--        </svg>-->
+<!--    </div>-->
 
     <!-- Hero -->
     <div class="section section-xl bg-primary overflow-hidden">
@@ -136,7 +159,7 @@
                             <!-- Icon Boxes -->
                             <div class="card border-light">
                                 <div class="card-body p-5">
-                                    <img src="/assets/img/pages/design.svg" alt="Web design illustration" class="image-md mb-4">
+                                    <img src="/pixel/assets/img/pages/design.svg" alt="Web design illustration" class="image-md mb-4">
                                     <h2 class="h4 mb-2">Equipe de Profissionais</h2>
                                     <p>Ao realizar uma denúncia, uma equipe de profissionais da sua instituição analisará seu caso. Psicólogos, Pedagogos e a Diretoria estudarão e tratarão seu caso da forma correta, presevando sua identidade e evitando
                                         que seu caso se repita em sua instituição.</p>
@@ -147,7 +170,7 @@
                             <!-- Icon Boxes -->
                             <div class="card border-light mt-3">
                                 <div class="card-body p-5">
-                                    <img src="/assets/img/pages/technologies.svg" alt="Responsive illustration" class="image-md mb-4">
+                                    <img src="/pixel/assets/img/pages/technologies.svg" alt="Responsive illustration" class="image-md mb-4">
                                     <h2 class="h4 mb-2">Totalmente Digital</h2>
                                     <p>Você poderá denunciar um ocorrido e acompanhar o desenrrolar do caso de forma totalmente digital. As informações podem ser acessadas de qualquer lugar através de um navegador Web.</p>
                                     <a href="#" class="btn btn-sm btn-primary">Learn more</a>
@@ -161,7 +184,7 @@
                             <!-- Icon Boxes -->
                             <div class="card border-light">
                                 <div class="card-body p-5">
-                                    <img src="/assets/img/pages/code.svg" alt="Code illustration" class="image-md mb-4">
+                                    <img src="/pixel/assets/img/pages/code.svg" alt="Code illustration" class="image-md mb-4">
                                     <h2 class="h4 mb-2">Segurança e Anonimato</h2>
                                     <p>Somente os profissionais da instutição responsáveis por resolver os casos terão acesso aos seus dados. Sua segurança e
                                     anonimato serão preservados</p>
@@ -172,7 +195,7 @@
                             <!-- Icon Boxes -->
                             <div class="card border-light mt-3">
                                 <div class="card-body p-5">
-                                    <img src="/assets/img/pages/support.svg" alt="Support illustration" class="image-md mb-4">
+                                    <img src="/pixel/assets/img/pages/support.svg" alt="Support illustration" class="image-md mb-4">
                                     <h2 class="h4 mb-2">Seriedade e Transparência</h2>
                                     <p>Suas denúncias serão analisadas de forma séria por profissionais capacitados. O processo de apuração e resolução do ocorrido é
                                     feito de forma amigável e transparente. Todas as medidas tomadas são analisadas cuidadosamente para que sua segurança seja sempre preservada.</p>
@@ -187,6 +210,48 @@
         </div>
     </section>
     <!-- Section -->
+
+    <section id="features" class="section section-lg pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <!-- Icon box -->
+                    <div class="icon-box text-center mb-5 mb-md-0">
+                        <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-3">
+                            <span class="fas fa-bullhorn"></span>
+                        </div>
+                        <h2 class="my-3 h5">8473 Denúncias</h2>
+                        <p class="px-lg-4">O sistema já recebeu um grande número de casos</p>
+                    </div>
+                    <!-- End of Icon box -->
+                </div>
+                <div class="col-12 col-md-4 mb-5 mb-md-0">
+                    <!-- Icon box -->
+                    <div class="icon-box text-center">
+                        <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-3">
+                            <span class="fas fa-clipboard-check"></span>
+                        </div>
+                        <h2 class="my-3 h5">7132 Casos resolvidos</h2>
+                        <p class="px-lg-4">Grande parte das denúncias cadastradas no sistema já foram resolvidos</p>
+                    </div>
+                    <!-- End of Icon box -->
+                </div>
+                <div class="col-12 col-md-4 mb-5 mb-md-0">
+                    <!-- Icon box -->
+                    <div class="icon-box text-center">
+                        <div class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-3">
+                            <span class="fas fa-hands-helping"></span>
+                        </div>
+                        <h2 class="my-3 h5">8123 Pessoas ajudadas</h2>
+                        <p class="px-lg-4">Milhares de pessoas já foram ajudadas através do DenuncieJá</p>
+                    </div>
+                    <!-- End of Icon box -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <div class="section section-md bg-soft">
         <div class="container">
             <div class="row justify-content-center">
@@ -235,26 +300,26 @@
 </footer>
 
 <!-- Core -->
-<script src="/vendor/jquery/dist/jquery.min.js"></script>
-<script src="/vendor/popper.js/dist/umd/popper.min.js"></script>
-<script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/vendor/headroom.js/dist/headroom.min.js"></script>
+<script src="/pixel/vendor/jquery/dist/jquery.min.js"></script>
+<script src="/pixel/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="/pixel/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/pixel/vendor/headroom.js/dist/headroom.min.js"></script>
 
 <!-- Vendor JS -->
-<script src="/vendor/onscreen/dist/on-screen.umd.min.js"></script>
-<script src="/vendor/nouislider/distribute/nouislider.min.js"></script>
-<script src="/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
-<script src="/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="/vendor/jarallax/dist/jarallax.min.js"></script>
-<script src="/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script src="/vendor/vivus/dist/vivus.min.js"></script>
+<script src="/pixel/vendor/onscreen/dist/on-screen.umd.min.js"></script>
+<script src="/pixel/vendor/nouislider/distribute/nouislider.min.js"></script>
+<script src="/pixel/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="/pixel/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+<script src="/pixel/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="/pixel/vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="/pixel/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="/pixel/vendor/vivus/dist/vivus.min.js"></script>
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 <!-- pixel JS -->
-<script src="/assets/js/pixel.js"></script>
+<script src="/pixel/assets/js/pixel.js"></script>
 </body>
 
 </html>

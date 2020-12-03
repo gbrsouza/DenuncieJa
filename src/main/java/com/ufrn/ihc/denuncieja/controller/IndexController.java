@@ -31,4 +31,14 @@ public class IndexController {
     public String singUpInst(){
         return "signUpInst";
     }
+
+    @GetMapping("/user")
+    public String instDash() {return "inicialInst";}
+
+    @GetMapping("/user/denuncias")
+    public String denuncias() {return "denuncias";}
+
+    @GetMapping("/view")
+    public String initialUser() {return "inicialUser";}
+
 }

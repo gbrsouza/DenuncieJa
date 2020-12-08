@@ -41,4 +41,13 @@ public class IndexController {
     @GetMapping("/view")
     public String initialUser() {return "inicialUser";}
 
+    @GetMapping("/view/denunciar")
+    public String denunciar() {return "denunciarCaso";}
+
+    @GetMapping("/view/default")
+    public String defaults() {return "viewDenuncia";}
+
+    @GetMapping("/view/default/user")
+    public String defaultsuser() {return "viewDenunciaUser";}
+
 }

@@ -1,0 +1,232 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>Volt Bootstrap 5 Dashboard - Transactions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Volt Bootstrap 5 Dashboard - Transactions">
+    <meta name="author" content="Themesberg">
+    <meta name="description" content="Volt is a free and open source Bootstrap 5 Admin Dashboard featuring 11 example pages, 100 components and 3 plugins with Vanilla JS.">
+    <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, free bootstrap 5 dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, themesberg, themesberg dashboard, themesberg admin dashboard" />
+    <link rel="canonical" href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://demo.themesberg.com/volt">
+    <meta property="og:title" content="Volt Bootstrap 5 Dashboard - Transactions">
+    <meta property="og:description" content="Volt is a free and open source Bootstrap 5 Admin Dashboard featuring 11 example pages, 100 components and 3 plugins with Vanilla JS.">
+    <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/volt-bootstrap-5-dashboard-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://demo.themesberg.com/volt">
+    <meta property="twitter:title" content="Volt Bootstrap 5 Dashboard - Transactions">
+    <meta property="twitter:description" content="Volt is a free and open source Bootstrap 5 Admin Dashboard featuring 11 example pages, 100 components and 3 plugins with Vanilla JS.">
+    <meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/volt-bootstrap-5-dashboard-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/volt/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/volt/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/volt/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/volt/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/volt/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fontawesome -->
+    <link type="text/css" href="/volt/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Notyf -->
+    <link type="text/css" href="/volt/vendor/notyf/notyf.min.css" rel="stylesheet">
+
+    <!-- Volt CSS -->
+    <link type="text/css" href="/volt/css/volt.css" rel="stylesheet">
+
+    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+</head>
+
+
+<body>
+
+<nav id="sidebarMenu" class="sidebar d-md-block bg-primary text-white collapse" data-simplebar>
+    <div class="sidebar-inner px-4 pt-3">
+        <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+            <div class="d-flex align-items-center">
+                <div class="user-avatar lg-avatar mr-4">
+                    <img src="/volt/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                </div>
+                <div class="d-block">
+                    <h2 class="h6">Olá, UFRN</h2>
+                    <a href="/volt/pages/examples/sign-in.html" class="btn btn-secondary text-dark btn-xs"><span class="mr-2"><span class="fas fa-sign-out-alt"></span></span>Sign Out</a>
+                </div>
+            </div>
+            <div class="collapse-close d-md-none">
+                <a href="#sidebarMenu" class="fas fa-times" data-toggle="collapse"
+                   data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true"
+                   aria-label="Toggle navigation"></a>
+            </div>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item  active ">
+                <a href="/volt/pages/dashboard/dashboard.html" class="nav-link">
+                    <span class="sidebar-icon"><span class="fas fa-chart-pie"></span></span>
+                    <span>Overview</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="/user/denuncias" class="nav-link">
+                    <span class="sidebar-icon"><span class="fas fa-bullhorn"></span></span>
+                    <span>Denúncias</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="/volt/pages/settings.html" class="nav-link">
+                    <span class="sidebar-icon"><span class="fas fa-cog"></span></span>
+                    <span>Configurações</span>
+                </a>
+            </li>
+            <li class="nav-item">
+        </ul>
+    </div>
+</nav>
+
+
+<main class="content">
+
+    <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark pl-0 pr-2 pb-0">
+        <div class="container-fluid px-0">
+            <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
+                <div class="d-flex">
+
+                </div>
+                <!-- Navbar links -->
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark mr-lg-3 icon-notifications" data-unread-notifications="true" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="icon icon-sm">
+                <span class="fas fa-bell bell-shake"></span>
+                <span class="icon-badge rounded-circle unread-notifications"></span>
+              </span>
+                        </a>
+                        <div class="dropdown-menu dashboard-dropdown dropdown-menu-lg dropdown-menu-center mt-2 py-0">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="text-center text-primary font-weight-bold border-bottom border-light py-3">Notifications</a>
+
+                                <a href="#" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pt-1 px-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="media d-flex align-items-center">
+                                <img class="user-avatar md-avatar rounded-circle" alt="Image placeholder" src="/volt/assets/img/team/school.png">
+                                <div class="media-body ml-2 text-dark align-items-center d-none d-lg-block">
+                                    <span class="mb-0 font-small font-weight-bold">UFRN</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dashboard-dropdown dropdown-menu-right mt-2">
+                            <a class="dropdown-item font-weight-bold" href="#"><span class="far fa-user-circle"></span>Meu Perfil</a>
+                            <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-cog"></span>Configurações</a>
+                            <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-envelope-open-text"></span>Denúncias</a>
+                            <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-user-shield"></span>Suporte</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-sign-out-alt text-danger"></span>Sair</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <footer class="footer section py-5">
+        <div class="row">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <p class="mb-0 text-center text-xl-left">Copyright © 2019-<span class="current-year"></span> <a class="text-primary font-weight-normal" href="https://themesberg.com" target="_blank">Themesberg</a></p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <ul class="list-inline list-group-flush list-group-borderless text-center text-xl-right mb-0">
+                    <li class="list-inline-item px-0 px-sm-2">
+                        <a href="https://themesberg.com/about">About</a>
+                    </li>
+                    <li class="list-inline-item px-0 px-sm-2">
+                        <a href="https://themesberg.com/themes">Themes</a>
+                    </li>
+                    <li class="list-inline-item px-0 px-sm-2">
+                        <a href="https://themesberg.com/blog">Blog</a>
+                    </li>
+                    <li class="list-inline-item px-0 px-sm-2">
+                        <a href="https://themesberg.com/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</main>
+
+
+
+<!-- Core -->
+<script src="/volt/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="/volt/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Vendor JS -->
+<script src="/volt/vendor/onscreen/dist/on-screen.umd.min.js"></script>
+
+<!-- Slider -->
+<script src="/volt/vendor/nouislider/distribute/nouislider.min.js"></script>
+
+<!-- Jarallax -->
+<script src="/volt/vendor/jarallax/dist/jarallax.min.js"></script>
+
+<!-- Smooth scroll -->
+<script src="/volt/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Count up -->
+<script src="/volt/vendor/countup.js/dist/countUp.umd.js"></script>
+
+<!-- Notyf -->
+<script src="/volt/vendor/notyf/notyf.min.js"></script>
+
+<!-- Charts -->
+<script src="/volt/vendor/chartist/dist/chartist.min.js"></script>
+<script src="/volt/vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+
+<!-- Datepicker -->
+<script src="/volt/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+<!-- Simplebar -->
+<script src="/volt/vendor/simplebar/dist/simplebar.min.js"></script>
+
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- Volt JS -->
+<script src="/volt/assets/js/volt.js"></script>
+
+
+</body>
+
+</html>

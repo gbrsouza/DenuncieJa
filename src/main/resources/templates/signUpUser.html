@@ -64,33 +64,17 @@
 <body>
     <main>
 
-<!--        <div class="preloader bg-dark flex-column justify-content-center align-items-center">-->
-<!--    <svg id="loader-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 64 78.4">-->
-<!--        <path fill="#fff" d="M10,0h1.2V11.2H0V10A10,10,0,0,1,10,0Z"/>-->
-<!--        <rect fill="none" stroke="#fff" stroke-width="11.2" x="40" y="17.6" width="0" height="25.6"/>-->
-<!--        <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="11.2" x="23" y="35.2" width="0" height="25.6"/>-->
-<!--        <path fill="#fff" d="M52.8,35.2H64V53.8a7,7,0,0,1-7,7H52.8V35.2Z"/>-->
-<!--        <rect fill="none" stroke="#fff" stroke-width="11.2" x="6" y="52.8" width="0" height="25.6"/>-->
-<!--        <path fill="#fff" d="M52.8,0H57a7,7,0,0,1,7,7h0v4.2H52.8V0Z"/>-->
-<!--        <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="11.2" x="57.8" y="17.6" width="0" height="11.2"/>-->
-<!--        <rect fill="none" stroke="#fff" stroke-width="11.2" x="6" y="35.2" width="0" height="11.2"/>-->
-<!--        <rect fill="none" stroke="#fff" stroke-width="11.2" x="40.2" y="49.6" width="0" height="11.2"/>-->
-<!--        <path fill="#fff" d="M17.6,67.2H28.8v1.2a10,10,0,0,1-10,10H17.6V67.2Z"/>-->
-<!--        <rect fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="28.8" x="31.6" width="0" height="11.2"/>-->
-<!--        <rect fill="none" stroke="#fff" x="14" stroke-width="28.8" y="17.6" width="0" height="11.2"/>-->
-<!--    </svg>-->
-<!--</div>-->
-
         <!-- Section -->
-        <section class="min-vh-200 d-flex align-items-center bg-soft">
+        <section class="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
             <div class="container">
+                <p class="text-center"><a href="/" class="text-gray-700"><i class="fas fa-angle-left mr-2"></i> Voltar para a homepage</a></p>
                 <div class="row justify-content-center">
                     <div class="col-12 d-flex align-items-center justify-content-center">
                         <div class="signin-inner mt-3 mt-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                             <div class="text-center text-md-center mb-4 mt-md-0">
                                 <h1 class="mb-0 h3">Cadastro de Usuário</h1>
                             </div>
-                            <form action="#">
+                            <form action="/login">
                                 <div class="form-row">
                                     <label for="name">Nome</label>
                                     <div class="form-group col-md-12">
@@ -164,7 +148,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="exampleRadios" id="op3" value="option2">
                                                 <label class="form-check-label" for="op3">
-                                                    Técno Administrativo
+                                                    Técnico Administrativo
                                                 </label>
                                             </div>
                                             <div class="form-check">
@@ -223,7 +207,7 @@
                             <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
                                 <span class="font-weight-normal">
                                     Já possui cadastro?
-                                    <a href="./sign-in.html" class="font-weight-bold">Login aqui</a>
+                                    <a href="/login" class="font-weight-bold">Login aqui</a>
                                 </span>
                             </div>
                         </div>

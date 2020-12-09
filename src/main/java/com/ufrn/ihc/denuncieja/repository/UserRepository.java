@@ -1,8 +1,8 @@
 package com.ufrn.ihc.denuncieja.repository;
 
-import com.ufrn.ihc.denuncieja.model.User;
+import com.ufrn.ihc.denuncieja.model.ApplicationUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<User, Long> {
-    public User findByEmail(String email);
+public interface UserRepository extends JpaRepository<ApplicationUser, Long> {
+    public ApplicationUser findByEmail(String email);
 }

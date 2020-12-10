@@ -16,7 +16,8 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
@@ -189,314 +190,33 @@
             <thead>
             <tr>
                 <th>#</th>
-                <th>Bill For</th>
-                <th>Issue Date</th>
-                <th>Due Date</th>
-                <th>Total</th>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Data</th>
                 <th>Status</th>
-                <th>Action</th>
+                <th>Ação</th>
             </tr>
             </thead>
             <tbody>
             <!-- Item -->
-            <tr>
+            <tr th:each="denuncia : ${denuncias}">
                 <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456478
-                    </a>
+                    <span class="font-weight-normal" th:text="${denuncia.id}"></span>
                 </td>
                 <td>
-                    <span class="font-weight-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 May 2020</span></td>
-                <td><span class="font-weight-normal">1 Jun 2020</span></td>
-                <td><span class="font-weight-bold">$799,00</span></td>
-                <td><span class="font-weight-bold text-warning">Due</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456423
-                    </a>
+                    <span class="font-weight-bold" th:text="${denuncia.title}"></span>
                 </td>
                 <td>
-                    <span class="font-weight-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Apr 2020</span></td>
-                <td><span class="font-weight-normal">1 May 2020</span></td>
-                <td><span class="font-weight-bold">$799,00</span></td>
-                <td><span class="font-weight-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456420
-                    </a>
+                    <span class="font-weight-normal" th:text="${denuncia.description}"></span>
                 </td>
                 <td>
-                    <span class="font-weight-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Mar 2020</span></td>
-                <td><span class="font-weight-normal">1 Apr 2020</span></td>
-                <td><span class="font-weight-bold">$799,00</span></td>
-                <td><span class="font-weight-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456421
-                    </a>
+                    <span class="font-weight-normal" th:text="${denuncia.date}"></span>
                 </td>
                 <td>
-                    <span class="font-weight-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Feb 2020</span></td>
-                <td><span class="font-weight-normal">1 Mar 2020</span></td>
-                <td><span class="font-weight-bold">$799,00</span></td>
-                <td><span class="font-weight-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456420
-                    </a>
+                    <span class="font-weight-normal" th:text="${denuncia.status}"></span>
                 </td>
                 <td>
-                    <span class="font-weight-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Jan 2020</span></td>
-                <td><span class="font-weight-normal">1 Feb 2020</span></td>
-                <td><span class="font-weight-bold">$799,00</span></td>
-                <td><span class="font-weight-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456479
-                    </a>
-                </td>
-                <td>
-                    <span class="font-weight-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Dec 2019</span></td>
-                <td><span class="font-weight-normal">1 Jan 2020</span></td>
-                <td><span class="font-weight-bold">$799,00</span></td>
-                <td><span class="font-weight-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456478
-                    </a>
-                </td>
-                <td>
-                    <span class="font-weight-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Nov 2019</span></td>
-                <td><span class="font-weight-normal">1 Dec 2019</span></td>
-                <td><span class="font-weight-bold">$799,00</span></td>
-                <td><span class="font-weight-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        453673
-                    </a>
-                </td>
-                <td>
-                    <span class="font-weight-normal">Gold Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Oct 2019</span></td>
-                <td><span class="font-weight-normal">1 Nov 2019</span></td>
-                <td><span class="font-weight-bold">$533,42</span></td>
-                <td><span class="font-weight-bold text-danger">Canceled</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456468
-                    </a>
-                </td>
-                <td>
-                    <span class="font-weight-normal">Gold Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Sep 2019</span></td>
-                <td><span class="font-weight-normal">1 Oct 2019</span></td>
-                <td><span class="font-weight-bold">$533,42</span></td>
-                <td><span class="font-weight-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="/volt/invoice.html" class="font-weight-bold">
-                        456478
-                    </a>
-                </td>
-                <td>
-                    <span class="font-weight-normal">Flexible Subscription Plan</span>
-                </td>
-                <td><span class="font-weight-normal">1 Aug 2019</span></td>
-                <td><span class="font-weight-normal">1 Sep 2019</span></td>
-                <td><span class="font-weight-bold">$233,42</span></td>
-                <td><span class="font-weight-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="icon icon-sm">
-                                            <span class="fas fa-ellipsis-h icon-dark"></span>
-                                        </span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/volt/invoice.html"><span class="fas fa-eye mr-2"></span>View Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
-                        </div>
-                    </div>
+                    <a href="/view/inst/denuncia"><span class="fas fa-edit mr-2"></span>Responder</a>
                 </td>
             </tr>
             </tbody>
@@ -530,30 +250,7 @@
             <div class="font-weight-bold small">Showing <b>5</b> out of <b>25</b> entries</div>
         </div>
     </div>
-    <footer class="footer section py-5">
-        <div class="row">
-            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                <p class="mb-0 text-center text-xl-left">Copyright © 2019-<span class="current-year"></span> <a class="text-primary font-weight-normal" href="https://themesberg.com" target="_blank">Themesberg</a></p>
-            </div>
 
-            <div class="col-12 col-lg-6">
-                <ul class="list-inline list-group-flush list-group-borderless text-center text-xl-right mb-0">
-                    <li class="list-inline-item px-0 px-sm-2">
-                        <a href="https://themesberg.com/about">About</a>
-                    </li>
-                    <li class="list-inline-item px-0 px-sm-2">
-                        <a href="https://themesberg.com/themes">Themes</a>
-                    </li>
-                    <li class="list-inline-item px-0 px-sm-2">
-                        <a href="https://themesberg.com/blog">Blog</a>
-                    </li>
-                    <li class="list-inline-item px-0 px-sm-2">
-                        <a href="https://themesberg.com/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 </main>
 
 <!-- Core -->
